@@ -201,7 +201,6 @@ void CalulateAverageScore(ClassRoom freshman[], int size, int amount)
         {
             sum += freshman[student].test[score];
         }
-        
         freshman[student].aveScore = sum * pow(amount,-1);
         if (freshman[student].aveScore >= 91)
             freshman[student].grade = 'A';
@@ -213,7 +212,7 @@ void CalulateAverageScore(ClassRoom freshman[], int size, int amount)
             freshman[student].grade = 'D';
         if (freshman[student].aveScore <= 60)
             freshman[student].grade = 'F';
-        
     }
-
 }
+
+
